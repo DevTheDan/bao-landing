@@ -1,0 +1,108 @@
+.partners {
+    &__wrapper {
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    &__card {
+        padding: 40px 120px 45px 0px;
+        background: $BGoverlay;
+        border: 1px solid rgba(255, 255, 255, 0.13);
+        border-radius: 20px;
+        display: flex;
+        // align-items: center;
+        column-gap: 20px;
+        &:nth-child(3) {
+            .vh { 
+                max-height: 5em;
+            }
+        }
+        &:nth-child(4) {
+            .vh { 
+                max-height: 7em;
+            }
+        }
+        &:nth-child(5) {
+            .vh { 
+                max-height: 9em;
+            }
+        }
+        &:nth-child(6) {
+            .vh { 
+                max-height: 11em;
+            }
+        }
+        &:nth-child(7) {
+            .vh { 
+                max-height: 13em;
+            }
+        }
+        &:nth-child(8) {
+            .vh { 
+                max-height: 16em;
+            }
+        }
+    }
+    &__structure {
+        min-width: 210px;
+        text-align: center;
+    }
+    &__title {
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 150%;
+    }
+    &__conditions {
+        margin-top: 7px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        span {
+            display: block;
+            margin-bottom: 10px;
+        }
+        ul {
+            // look on adaptive
+            width: 430px;
+            margin-bottom: 0;
+            padding-left: 17px;
+        }
+        li {
+            margin-bottom: 5px;
+            &::marker {
+                color: #BB33E0;
+            }
+        }
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 50px;
+        }
+    }
+    &__benefit {
+        margin-top: 7px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        span {
+            display: block;
+            margin-bottom: 10px;
+        }
+        ul {
+            margin-bottom: 0;
+            padding-left: 17px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        li {
+            white-space: nowrap;
+            padding-right: 80px;
+            margin-bottom: 5px;
+            &::marker {
+                color: #BB33E0;
+            }
+        }
+    }
+}

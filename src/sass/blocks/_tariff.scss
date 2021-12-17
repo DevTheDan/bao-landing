@@ -1,0 +1,128 @@
+.tariff {
+    padding-top: 200px;
+    &__logo {
+        display: flex;
+        justify-content: center;
+    }
+    &__cards {
+        margin-top: 140px;
+        display: flex;
+        column-gap: 40px;
+        justify-content: space-between;
+        &_page {
+            margin-top: 0;
+            padding-top: 110px;
+        }
+    }
+    &__card {
+        width: calc(100% / 3);
+        position: relative;
+        border: 1px solid rgba(255, 255, 255, 0.13);
+        border-radius: 20px;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        padding: 120px 37px 37px 37px ;
+        flex-direction: column;
+        &-head {
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 23px;
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            border-radius: 24px;
+            top: -40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 15px;
+        }
+        p {
+            margin-top: 5px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            max-width: 125px;
+        }
+        &:nth-child(1) {
+            background: radial-gradient(116.28% 97.25% at 49.86% 2.75%, rgba(200, 83, 255, 0.28) 0.91%, rgba(179, 67, 255, 0) 82.98%), rgba(255, 255, 255, 0.05);
+            .tariff__card-head {
+                background: radial-gradient(64.02% 107.22% at 1.85% 3.94%, #FF81FF 0%, rgba(255, 129, 255, 0) 100%), radial-gradient(92.35% 171.98% at 98.42% 100%, #AE3EFF 0%, rgba(130, 83, 233, 0) 100%), radial-gradient(48.34% 80.96% at 64.99% 0%, #FFE1FE 0%, rgba(255, 229, 254, 0) 100%), #0D0F1A;
+            }
+        }
+        &:nth-child(2) {
+            background: radial-gradient(116.28% 97.25% at 49.86% 2.75%, rgba(81, 220, 165, 0.28) 0.91%, rgba(39, 211, 35, 0) 82.98%), rgba(255, 255, 255, 0.05);
+            .tariff__card-head {
+                background: radial-gradient(64.02% 107.22% at 1.85% 3.94%, #06B89D 0%, rgba(17, 189, 158, 0) 100%),
+                radial-gradient(79.3% 149.47% at 98.42% 100%, #CFFFEC 0%, rgba(229, 255, 241, 0) 100%),
+                radial-gradient(73.78% 120% at 74.85% -12.42%, #1BC29F 0%, rgba(22, 191, 159, 0) 100%),
+                linear-gradient(0deg, #0D0F1A, #0D0F1A);
+            }
+        }
+        &:nth-child(3) {
+            background: radial-gradient(116.28% 97.25% at 49.86% 2.75%, rgba(90, 95, 236, 0.28) 0.91%, rgba(125, 116, 250, 0) 82.98%), rgba(255, 255, 255, 0.05);
+            .tariff__card-head {
+                background: radial-gradient(64.02% 107.22% at 1.85% 3.94%, #8253E9 0%, rgba(130, 83, 233, 0.609375) 39.06%, rgba(130, 83, 233, 0) 100%), radial-gradient(79.3% 149.47% at 98.42% 100%, #7A7FFF 0%, rgba(122, 127, 255, 0.348958) 65.1%, rgba(122, 127, 255, 0) 100%), radial-gradient(76.78% 126.36% at 67.9% -13.03%, #D8D7FF 0%, rgba(209, 202, 255, 0) 100%), #0D0F1A;
+            }
+        }
+    }
+    &__percent {
+        font-weight: normal;
+        font-size: 64px;
+        line-height: 74px;
+    }
+    &__input {
+        outline: 0;
+        margin-top: 40px;
+        height: 60px;
+        width: 100%;
+        background: transparent;
+        border: 1px solid rgba(255,255,255,.5);
+        border-radius: 8px;
+        padding: 22px;
+        color: $color1;
+        &::placeholder {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            color: $color1;
+            opacity: 0.5;
+        }
+    }
+    &__result {
+        width: 100%;
+        margin-top: 30px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            &:last-child {
+                margin-bottom: unset;
+            }
+        }
+    }
+    // page 
+    &__list {
+        margin: 30px 0 0 0;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 140%;
+        padding-left: 1em;
+        li {
+            margin-bottom: 8px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &::marker {
+                color: #BB33E0;
+            }
+        }
+    }
+}

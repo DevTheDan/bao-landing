@@ -1,0 +1,36 @@
+.promo {
+    padding-top: 120px;
+    position: relative;
+    // overflow: hidden;
+    &__options {
+        margin-top: 150px;
+        display: flex;
+        justify-content: space-around;
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 160px;
+            p {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 140%;
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+    }
+    
+}
+
+// .decoration {
+//     position: relative;
+//     &::before {
+//         content: url('../img/promo/decoration.svg');
+//         position: absolute;
+//         top: -50%;
+//         right: 50%;
+//         transform: translateX(50%);
+
+//     }
+// }

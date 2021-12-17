@@ -1,0 +1,28 @@
+.btn {
+    background: $gradient;
+    box-shadow: 4px 22px 36px -17px rgba(107, 91, 235, 0.7);
+    border-radius: 11px;
+    border: none;
+    outline: none;
+    width: 262px;
+    height: 65px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0 auto;
+    display: block;
+    &_promo {
+        margin-top: 60px;
+    }
+    &_tariff {
+        width: 100%;
+        margin-top: 25px;
+    }
+    &_goal {
+        margin: 60px 0 0 0;
+    }
+    &_faq {
+        margin: 115px 0 0 0;
+    }
+}
+

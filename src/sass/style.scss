@@ -1,0 +1,82 @@
+@import 'libs/_bootstrap-reboot.min.scss';
+@import 'libs/swiper-bundle.min.css';
+@import '../fonts/style.css';
+@import 'blocks/_variables.scss';
+
+
+* {
+	font-family: 'GT Eesti Pro Display';
+	font-style: normal;
+	color: $color1;
+}
+
+.main {
+	max-width: 1920px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: url(../img/bg/bg2.png),url(../img/bg/2.png),url(../img/bg/3.png),url(../img/bg/4.png),url(../img/bg/5.png);
+    background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
+    // background-position: top left,right top,bottom right,bottom left;
+    background-size: contain;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+
+
+body {
+	background: $BG;
+	position: relative;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, p {
+	margin-bottom: 0;
+}
+
+.page {
+    padding-top: 95px;
+    &__title {
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 100%;
+        text-align: center;
+    }
+	&__subtitle {
+		margin: 30px auto 0 auto;
+		max-width: 710px;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 140%;
+		text-align: center;
+	}
+}
+
+@import 'blocks/_button.scss';
+@import 'blocks/_titles.scss';
+@import 'blocks/_header.scss';
+@import 'blocks/_promo.scss';
+@import 'blocks/_tariff.scss';
+@import 'blocks/_testimonials.scss';
+@import 'blocks/_video.scss';
+@import 'blocks/_today.scss';
+@import 'blocks/_goal.scss';
+@import 'blocks/_footer.scss';
+@import 'blocks/_faq.scss';
+@import 'blocks/_partners.scss';
+@import 'blocks/_about.scss';
+@import 'blocks/_contacts.scss';
+@import 'blocks/_media.scss';
